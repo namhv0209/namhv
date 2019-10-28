@@ -1,0 +1,65 @@
+.content-home {
+  width: 1245px;
+  height: 520px;  
+    h2 {
+      margin-left: 20px;
+      margin-top: 20px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+  }
+  
+  .div-table {
+    margin-left: 20px;
+    width: 1250px;
+    height: 520px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.726);
+    float: left;
+  
+    table {
+      text-align: center;
+      display: block;
+      width: 1250px;
+      height: 520px;
+      overflow: auto;
+  
+      table tr th td {
+        position: absolute;
+        margin-top: -20px;
+        vertical-align: middle;
+      }
+  
+      img {
+        width: 100px;
+        height: 140px;
+      }
+  
+      thead.fixedHeader tr {
+        position: relative;
+      }
+  
+      tbody.scrollContent {
+        display: block;
+        //   height: 262px;
+        overflow: auto;
+        width: 1250px;
+      }
+  
+      thead.fixedHeader {
+        display: table;
+        overflow: auto;
+        width: 100%;
+      }
+  
+      .td-center {
+        padding-top: 60px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+
+    
+  
+  

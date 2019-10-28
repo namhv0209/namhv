@@ -1,0 +1,46 @@
+<div class="content-home">
+    <h2>Danh sách sản phẩm</h2>
+    <div style="margin-left: 1138px;">
+        <button mat-button  style="color: rgb(236, 119, 119); background-color: rgb(186, 245, 128)"
+                    (click)= "AddProduct()">Thêm sản phẩm</button>
+    </div>
+
+    <div class="div-table table-wrapper-scroll-y my-custom-scrollbar">
+        <table class="table table-hover table-fixed  table-striped mb-0">
+            <thead class="fixedHeader">
+                <tr>
+                    <th style="width: 50px">Stt</th>
+                    <th style="width: 200px">Ảnh sản phẩm</th>
+                    <th style="width: 200px">Tên sản phẩm</th>
+                    <th style="width: 200px">hãng sản xuất</th>
+                    <th style="width: 200px">Tên danh mục</th>
+                    <th style="width: 200px">Giá</th>
+                    <th style="width: 200px">Options</th>
+                </tr>
+            </thead>
+            <tbody class="scrollContent">
+                <tr *ngFor="let product of listProduct; let i= index;">
+                    <th class="td-center" style="width: 50px">{{i+1}}</th>
+                    <td style="width: 200px"><img src="{{product.image}}" alt="Lỗi"></td>
+                    <td class="td-center" style="width: 200px">{{product.name}}</td>
+                    <td class="td-center" style="width: 200px">{{product.brand}}</td>
+                    <td class="td-center" style="width: 200px">{{product.categoryId}}</td>
+                    <td class="td-center" style="width: 200px">{{product.price}}</td>
+                    <td class="td-center" style="width: 200px">
+                        <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: rgb(161, 248, 90);margin-right:10px"
+                                title="chi tiết"    [routerLink]="['/home', product.id, 'product-detail']" >menu</mat-icon>
+                        <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: rgb(248, 182, 243);"
+                                title="sửa"    [routerLink]="['/home', product.id, 'edit-product']"     >edit</mat-icon>
+                        <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: rgb(136, 107, 206);margin-left:10px"
+                                title="xóa"    (click)= "Deleteproduct(product.id)">delete</mat-icon>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- <div style="width: 300px;height: 300px;background-color: rgb(247, 52, 149);">
+    <p>product works!</p>
+    [routerLink]="['/home', product.id, 'edit-product']"
+</div> -->

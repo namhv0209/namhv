@@ -1,0 +1,34 @@
+<div class="addProduct">
+    <form class="addProduct-form"  (submit)="onSubmit()">
+        <mat-form-field >
+            <input matInput placeholder="Link ảnh sản phẩm" [(ngModel)]="imagePro" name="image">
+          </mat-form-field>
+          <mat-form-field >
+            <input matInput placeholder="Tên sản phẩm" [(ngModel)]="namePro" name="name">
+          </mat-form-field>
+          <mat-form-field >
+            <input matInput placeholder="Hãng sản xuất" [(ngModel)]="brandPro" name="brand">
+          </mat-form-field>
+          <mat-form-field >
+            <input matInput placeholder="Tên danh mục" [(ngModel)]="categoryPro" name="categoryId">
+          </mat-form-field>
+          <mat-form-field >
+            <input matInput placeholder="Giá" [(ngModel)]="pricePro" name="price">
+          </mat-form-field>
+          <table>
+              <tr>
+                  <td><button mat-button (click)="noAdd()" style="color: pink">No,Thanks</button></td>
+                  <td><input  type="submit" style="color: blue" value="Add Product"></td>
+              </tr>
+          </table>
+    </form>
+    <!-- <form (submit)="onSubmit()">
+      <input [(ngModel)]="imagePro" placeholder="Link ảnh" name="image"><br>
+      <input [(ngModel)]="namePro" placeholder="Tên sản phẩm" name="name"><br>
+      <input [(ngModel)]="brandPro" placeholder="Hãng sản suất" name="brand"><br>
+      <input [(ngModel)]="categoryPro" placeholder="Danh mục" name="category"><br>
+      <input [(ngModel)]="pricePro" placeholder="Giá" name="price"><br>
+      <input type="submit" value="Add Product">
+    </form> -->
+</div>
+

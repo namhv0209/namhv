@@ -1,0 +1,225 @@
+<div class="waper">
+
+
+    <!-- --------------------------------------------header------------------------------------------ -->
+    <div class="header">
+      <!--Navbar -->
+      <nav class="mb-1 navbar navbar-expand-lg navbar-dark orange lighten-1">
+        <a class="navbar-brand" href="#">Admin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+          aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+              <mat-icon matBadge="5" matBadgeColor="warn"
+                style="margin-top: 12px;margin-right: 10px;color: rgb(239, 238, 252);font-size: 20px;">
+                home</mat-icon>
+              <mat-icon matBadge="15" matBadgeColor="warn"
+                style="margin-top: 12px;margin-right: 25px;color: rgb(239, 238, 252);font-size: 20px;">
+                message</mat-icon>
+              <!-- <button type="button" class="btn btn-primary"
+                              style="margin-right: 10px;background-color: rgb(118, 118, 224)">
+                              Messages <span class="badge badge-light">4</span>
+                          </button> -->
+            </li>
+  
+            <li class="nav-item avatar" style="margin-right: 10px;">
+              <a class="nav-link p-0 dropdown-toggle " href="#" id="navbarDropdownMenuImage" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img src="https://img2.thuthuatphanmem.vn/uploads/2019/01/04/hinh-anh-hot-girl-dep_025104603.jpg"
+                  class="rounded-circle z-depth-0" alt="avatar image" height="40" width="40">
+              </a>
+              <!-- frofile -->
+              <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
+                aria-labelledby="navbarDropdownMenuImage">
+                <div class="card view overlay zoom" style="width:400px; height: 280px;">
+                  <img class="card-img-top"
+                    src="https://img2.thuthuatphanmem.vn/uploads/2019/01/04/hinh-anh-hot-girl-dep_025104603.jpg"
+                    alt="Card image" style="height:100px;width: 100%;height: 100%;">
+  
+                  <div class="card-img-overlay">
+                    <h3 class="card-title">Nam Văn</h3>
+                    <p class="card-text">Avt</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary" style="width: 100%;">Logout</a>
+              </div>
+  
+            </li>
+  
+          </ul>
+        </div>
+      </nav>
+      <!--/.Navbar -->
+    </div>
+  
+  
+  
+    <!-- --------------------------------------------menu------------------------------------------ -->
+    <div class="menu ">
+      <div class="menu-profile">
+        <div class="media border p-1" style="width: 100%; height: 86px; float: left;">
+          <img src="https://img2.thuthuatphanmem.vn/uploads/2019/01/04/hinh-anh-hot-girl-dep_025104603.jpg" alt="John Doe"
+            class="mr-3 mt-3 rounded-circle" style="width:50px;">
+          <div class="media-body">
+            <div>
+              <h3 style="margin-top: 12px; float: left;">Nam Văn</h3>
+            </div>
+            <div style="float: left">
+              <small><i class="fa fa-circle text-success"
+                  style="margin-right: 4px; color: rgb(111, 253, 92); margin-bottom: 20px"></i><i>online</i></small>
+  
+            </div>
+          </div>
+        </div>
+  
+  
+        <div class="input-group md-form form-sm form-2 pl-0" style="margin-top: 5px;">
+          <input class="form-control my-0 py-1 amber-border" type="text" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <span class="input-group-text amber lighten-3" id="basic-text1"><i class="fas fa-search text-grey"
+                aria-hidden="true"></i></span>
+          </div>
+        </div>
+  
+      </div>
+  
+      <!-- -------------------------------------menu2-------------------------------------- -->
+      <div class="menu2">
+        <nav class="navbar navbar-dark menu-navbar"
+          style="margin-top:10px;height: 46px;padding:4px;background-color: rgb(41, 45, 58);color: rgb(225, 225, 226);font-family: Georgia, 'Times New Roman', Times, serif; ">
+          <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: rgb(124, 110, 199);margin-left: 4px">
+            menu</mat-icon> 
+            
+          <a class="navbar-brand" style="margin-right: 120px;">Menu</a>
+        </nav>
+  
+        <nav class="navbar navbar-dark menu-navbar" routerLink= "products"
+          style="height: 40px;padding:4px;background-color: rgb(41, 45, 58);color: rgb(225, 225, 226);
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ">
+          <i class="fa fa-laptop" ></i>
+          <a class="navbar-brand"  style="margin-right: 120px;font-size: 12px;">Products</a>
+        </nav>
+  
+        <nav class="navbar navbar-dark menu-navbar" routerLink="category"
+          style="height: 40px;padding:4px;background-color: rgb(41, 45, 58);color: rgb(225, 225, 226);
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ">
+            <i class="fa fa-book"></i>
+          <a class="navbar-brand" routerLink="category" style="margin-right: 120px;font-size: 12px;">Categorys</a>
+        </nav>
+      </div>
+    </div>
+  
+  
+  
+    <!-- --------------------------------------------content------------------------------------------ -->
+    <div class="content">
+  
+      <router-outlet></router-outlet>
+  
+    </div>
+  
+    <!-- --------------------------------------------footer------------------------------------------ -->
+    <div class="footer">
+      <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+  
+        <div class="container">
+  
+          <div class="row">
+  
+            <div class="col-lg-2 col-md-12 mb-4">
+  
+              <div class="view overlay z-depth-1-half">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="img-fluid"
+                  alt="">
+                <a href="">
+                  <div class="mask rgba-white-light"></div>
+                </a>
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-2 col-md-6 mb-4">
+  
+              <div class="view overlay z-depth-1-half">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg" class="img-fluid"
+                  alt="">
+                <a href="">
+                  <div class="mask rgba-white-light"></div>
+                </a>
+              </div>
+  
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4">
+  
+              <div class="view overlay z-depth-1-half">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg" class="img-fluid"
+                  alt="">
+                <a href="">
+                  <div class="mask rgba-white-light"></div>
+                </a>
+              </div>
+  
+            </div>
+            <div class="col-lg-2 col-md-12 mb-4">
+  
+              <div class="view overlay z-depth-1-half">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(81).jpg" class="img-fluid"
+                  alt="">
+                <a href="">
+                  <div class="mask rgba-white-light"></div>
+                </a>
+              </div>
+  
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4">
+  
+              <div class="view overlay z-depth-1-half">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(82).jpg" class="img-fluid"
+                  alt="">
+                <a href="">
+                  <div class="mask rgba-white-light"></div>
+                </a>
+              </div>
+  
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4">
+  
+              <div class="view overlay z-depth-1-half">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(84).jpg" class="img-fluid"
+                  alt="">
+                <a href="">
+                  <div class="mask rgba-white-light"></div>
+                </a>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+          <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+        </div>
+  
+      </footer>
+    </div>
+  </div>
+  
+  
